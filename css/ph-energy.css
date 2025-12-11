@@ -1,6 +1,4 @@
-/*======================================================
-  BASE STYLES
-======================================================*/
+/**BASE STYLES**/
 :root {
     --color-dark-primary: #222;
     --color-light-text: white;
@@ -44,9 +42,7 @@ body {
 }
 
 
-/*======================================================
-  NAVIGATION
-======================================================*/
+/**Navigation**/
 nav {
     position: fixed;
     top: 0;
@@ -81,19 +77,16 @@ nav ul {
     gap: 25px; 
 }
 
-/* --- Nav Link Transition (CSS Transition 2) --- */
 nav ul li a {
     text-decoration: none;
     color: var(--color-light-text);
     font-weight: 500;
     font-size: 15px;
-    /* CSS Transition */
     transition: color 0.3s, text-shadow 0.3s;
     font-family: inherit;
     text-shadow: 0 1px 2px rgba(0, 100, 0, 0.13);
 }
 
-/* CSS Pseudoclass (:hover) */
 nav ul li a:hover {
     color: var(--color-accent-green);
     text-shadow: 0 2px 8px rgba(0, 184, 148, 0.27);
@@ -294,7 +287,7 @@ h2::before {
 
 
 /*======================================================
-  FOOTER
+  FOOTER AND SPRITE
 ======================================================*/
 footer {
     background: var(--color-dark-primary);
@@ -306,7 +299,24 @@ footer {
     border-radius: 16px 16px 0 0;
     box-shadow: 0 -2px 12px rgba(0, 100, 0, 0.13);
 }
+.sprite {
+    background-image: url('../Images/sprites.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
 
+.sprite.facebook {
+    background-position: -27px -19px;
+    width: 53px;
+    height: 52px;
+}
+
+.sprite.twitter {
+    background-position: -128px -19px;
+    width: 52px;
+    height: 52px;
+}
 
 /*======================================================
   IMAGE SOURCES (Attribution Block)
@@ -409,4 +419,5 @@ footer {
         grid-template-columns: 1fr;
         flex-direction: column;
     }
+
 }
