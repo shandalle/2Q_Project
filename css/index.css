@@ -231,7 +231,7 @@ footer {
   box-shadow: 0 -2px 12px #00640022;
 }
 
-sprite {
+.sprite {
     background-image: url('../Images/sprites.png');
     background-repeat: no-repeat;
     display: inline-block;
@@ -320,4 +320,5 @@ sprite {
 
 
 }
+
 
