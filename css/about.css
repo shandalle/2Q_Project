@@ -121,6 +121,24 @@ footer {
   border-radius: 16px 16px 0 0;
   box-shadow: 0 -2px 12px #00640022;
 }
+.sprite {
+    background-image: url('../Images/sprites.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sprite.facebook {
+    background-position: -27px -19px;
+    width: 53px;
+    height: 52px;
+}
+
+.sprite.twitter {
+    background-position: -128px -19px;
+    width: 52px;
+    height: 52px;
+}
 
 .profile-section {
   display: flex;
@@ -177,4 +195,5 @@ footer {
     margin: 0 auto 15px auto;
     display: block;
   }
+
 }
