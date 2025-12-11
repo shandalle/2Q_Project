@@ -232,7 +232,7 @@ footer {
 }
 
 sprite {
-    background-image: url('../images/sprites.png');
+    background-image: url('../Images/sprites.png');
     background-repeat: no-repeat;
     display: inline-block;
     vertical-align: middle;
@@ -320,3 +320,4 @@ sprite {
 
 
 }
+
