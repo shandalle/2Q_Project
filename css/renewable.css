@@ -238,6 +238,25 @@ footer {
     box-shadow: 0 -2px 12px rgba(0, 100, 0, 0.13);
 }
 
+.sprite {
+    background-image: url('../Images/sprites.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sprite.facebook {
+    background-position: -27px -19px;
+    width: 53px;
+    height: 52px;
+}
+
+.sprite.twitter {
+    background-position: -128px -19px;
+    width: 52px;
+    height: 52px;
+}
+
 /* Image sources */
 .image-sources {
   margin: 40px auto 0 auto;
@@ -325,4 +344,5 @@ footer {
     nav av {
         padding: 10px 10px 10px 10px;
     }
+
 }
