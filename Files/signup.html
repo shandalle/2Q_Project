@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Green Future PH</title>
+  <link rel="stylesheet" href="css/index.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+   <script src="js/script.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="Images/Web logo.png" alt="Green Future PH Logo">
+      <span>Green Future PH</span>
+    </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Files/renewable.html">Renewable 101</a></li>
+      <li><a href="Files/ph-energy.html">PH Energy</a></li>
+      <li><a href="Files/about.html">About Us</a></li>
+      <li><a href="Files/signup.html">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <main class="signup-page">
+    <section class="intro-panel">
+      <span class="eyebrow">Community signup</span>
+      <h1>Become part of Project Green Future</h1>
+      <p>Join our eco-conscious community to get volunteer alerts, sustainability tips, and local green action updates.</p>
+    </section>
+
+    <section class="signup-card">
+      <form id="signupForm" onsubmit="return validateForm()">
+        <div class="form-section">
+          <h2>Personal details</h2>
+          <p>Tell us a few things so we can make your experience more meaningful.</p>
+
+          <label for="fullName">Full name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Jordan Smith">
+          <span class="error" id="nameError"></span>
+
+          <label for="birthdate">Birthdate</label>
+          <input type="date" id="birthdate" name="birthdate">
+          <span class="error" id="birthError"></span>
+
+          <fieldset class="field-group">
+            <legend>Sex</legend>
+            <div class="choice-row">
+              <label><input type="radio" name="sex" value="Male"> Male</label>
+              <label><input type="radio" name="sex" value="Female"> Female</label>
+              <label><input type="radio" name="sex" value="Other"> Other</label>
+            </div>
+          </fieldset>
+          <span class="error" id="sexError"></span>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com">
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-section">
+          <h2>Account details</h2>
+          <p>Pick a username and password to sign in to your Green Future profile.</p>
+
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" placeholder="eco.jordan">
+          <span class="error" id="userError"></span>
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="At least 8 characters">
+          <span class="error" id="passError"></span>
+
+          <label for="confirmPassword">Confirm password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password">
+          <span class="error" id="confirmError"></span>
+        </div>
+
+        <div class="form-section">
+          <h2>Interests</h2>
+          <p>Choose the issues and activities that matter most to you.</p>
+
+          <label for="issueSelect">Main environmental concern</label>
+          <select id="issueSelect" name="issueSelect">
+            <option value="">Choose one</option>
+            <option>Pollution</option>
+            <option>Climate Change</option>
+            <option>Deforestation</option>
+            <option>Wildlife Protection</option>
+          </select>
+          <span class="error" id="issueError"></span>
+
+          <label>Choose advocacy interests</label>
+          <div class="choice-row">
+            <label><input type="checkbox" name="interests" value="Recycling"> Recycling</label>
+            <label><input type="checkbox" name="interests" value="Tree Planting"> Tree Planting</label>
+            <label><input type="checkbox" name="interests" value="Clean-ups"> Clean-ups</label>
+          </div>
+          <span class="error" id="interestError"></span>
+
+          <label>How often do you volunteer?</label>
+          <div class="choice-row">
+            <label><input type="radio" name="volunteer" value="Weekly"> Weekly</label>
+            <label><input type="radio" name="volunteer" value="Monthly"> Monthly</label>
+          </div>
+          <span class="error" id="volunteerError"></span>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="submit">Join us and save the planet</button>
+        </div>
+
+        <p id="successMessage" class="success-message"></p>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
