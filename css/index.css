@@ -318,7 +318,63 @@ footer {
     padding: 10px 10px;
   }
 
+}
 
+/* SIGNUP FORM ADDITIONS */
+
+.signup-container {
+max-width:700px;
+margin:180px auto 60px auto;
+background:white;
+padding:35px;
+border-radius:16px;
+box-shadow:0 4px 16px #b6e38833;
+border:1px solid #cdebb0;
+}
+
+.signup-container h2 {
+margin-bottom:20px;
+}
+
+.signup-container label {
+display:block;
+font-weight:bold;
+margin-top:15px;
+}
+
+.signup-container input,
+.signup-container select {
+width:100%;
+padding:12px;
+margin-top:8px;
+border:1px solid #cdebb0;
+border-radius:8px;
+font-size:15px;
+box-sizing:border-box;
+}
+
+.radio-group,
+.checkbox-group {
+margin-top:10px;
+}
+
+.radio-group input,
+.checkbox-group input {
+width:auto;
+margin-right:6px;
+}
+
+span {
+display:block;
+color:red;
+font-size:14px;
+margin-top:5px;
+}
+
+#successMessage {
+color:green;
+font-weight:bold;
+margin-top:20px;
 }
 
 
